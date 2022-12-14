@@ -1,0 +1,5 @@
+package com.luxoft.orderservice.service;
+
+public interface OrderService {
+
+}

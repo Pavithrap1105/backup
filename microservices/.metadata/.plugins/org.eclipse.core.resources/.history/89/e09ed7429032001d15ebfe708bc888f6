@@ -1,0 +1,5 @@
+package com.luxoft.orderservice.controller;
+
+public class OrderController {
+
+}

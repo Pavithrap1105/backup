@@ -1,0 +1,58 @@
+package com.luxoft.bookshop.publicationsservice.entity;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "Publication")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class Publication {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int publicationId;
+
+	@NotNull(message = "Publisher name should not be null")
+	@NotEmpty(message = "Publisher name should not be empty")
+	private String publisherName;
+
+	@Digits(integer = 4, fraction = 0)
+	private String publishingDate;
+
+	public Publication(int publicationId,
+			@NotNull(message = "Publisher name should not be null") @NotEmpty(message = "Publisher name should not be empty") String publisherName,
+			@Digits(integer = 4, fraction = 0) String publishingDate) {
+		super();
+		this.publicationId = publicationId;
+		this.publisherName = publisherName;
+		this.publishingDate = publishingDate;
+	}
+
+	@JsonIgnore
+	@ManyToMany(mappedBy = "publications")
+	private List<Author> authors;
+
+	@OneToMany(mappedBy = "publication")
+	private List<Books> books;
+
+}

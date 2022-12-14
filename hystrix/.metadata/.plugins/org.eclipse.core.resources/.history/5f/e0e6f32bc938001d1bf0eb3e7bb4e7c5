@@ -1,0 +1,21 @@
+server:
+  port: 9093
+  
+spring:
+  application:
+    name: HYSTRIX-DASHBOARD
+  main:
+    web-application-type: reactive
+    
+   
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream  
+        
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
+    
+      

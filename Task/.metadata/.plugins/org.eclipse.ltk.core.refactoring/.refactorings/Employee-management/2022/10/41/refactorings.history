@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;db.properties&apos; to &apos;Employee-management&apos;" description="Move &apos;db.properties&apos; to &apos;Employee-management&apos;" destination="/Employee-management" element1="/electricity-board/src/main/java/db.properties" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1665042371925" updateReferences="true"/>
+</session>

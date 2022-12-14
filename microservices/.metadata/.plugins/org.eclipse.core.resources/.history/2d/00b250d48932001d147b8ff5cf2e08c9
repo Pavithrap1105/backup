@@ -1,0 +1,26 @@
+package com.luxoft.productservice.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.luxoft.productservice.model.Product;
+import com.luxoft.productservice.repository.ProductRepository;
+
+@Service
+public class ProductServiceImpl implements ProductService {
+	
+	@Autowired
+	private ProductRepository productRepository;
+
+	@Override
+	public Product createProduct(Product product) {
+		Product prod = Product.builder()
+				.name(product.getName())
+				.description(product.getDescription())
+				.price(product.getPrice())
+				.build();
+		productRepository.save(prod);
+		return prod;
+	}
+
+}

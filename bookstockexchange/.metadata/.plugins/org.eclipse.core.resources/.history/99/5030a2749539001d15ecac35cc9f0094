@@ -1,0 +1,10 @@
+package com.luxoft.bookshop.authorservice;
+
+public class AuthorServiceApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

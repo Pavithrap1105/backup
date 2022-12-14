@@ -1,0 +1,5 @@
+package com.luxoft.orderservice.dto;
+
+public class OrderRequest {
+
+}

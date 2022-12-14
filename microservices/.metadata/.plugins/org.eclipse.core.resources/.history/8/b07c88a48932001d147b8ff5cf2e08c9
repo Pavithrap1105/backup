@@ -1,0 +1,5 @@
+package com.luxoft.productservice.dto;
+
+public class ProductRequest {
+
+}

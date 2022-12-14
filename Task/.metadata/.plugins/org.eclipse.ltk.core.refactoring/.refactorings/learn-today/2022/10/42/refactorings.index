@@ -1,0 +1,26 @@
+1665393595602	Delete element
+1665469438004	Rename package 'com.luxoft.learntoday.constants'
+1665472896039	Delete element
+1665480283409	Rename package 'com.luxoft.learntoday.enums'
+1665480305670	Delete element
+1665482912929	Delete element
+1665549331360	Rename package 'com.luxoft.learntoday.constants'
+1665549337064	Delete element
+1665549386998	Rename type 'UserEnum'
+1665634787698	Rename type 'AdminController'
+1665634808705	Rename type 'AdminRepository'
+1665634821204	Rename type 'AdminService'
+1665634834110	Rename type 'AdminServiceImpl'
+1665653218899	Delete element
+1665655310999	Rename type 'JwtRequest'
+1665655921897	Delete element
+1665655934543	Rename type 'JwtAuthenticationController'
+1665656054163	Delete elements
+1665656092635	Rename type 'JwtUserDetailsService'
+1665656118986	Rename type 'UserDetailsService'
+1665657025768	Rename type 'UserDetailsServiceImpl'
+1665659225314	Rename type 'JwtResponse'
+1665659309323	Move compilation unit
+1665659323758	Move compilation unit
+1665722275475	Rename type 'AdminControllerTest'
+1665722289424	Rename type 'AdminServiceTest'

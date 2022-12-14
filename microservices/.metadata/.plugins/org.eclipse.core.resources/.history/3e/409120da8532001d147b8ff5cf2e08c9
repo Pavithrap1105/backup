@@ -1,0 +1,5 @@
+package com.luxoft.productservice.model;
+
+public class Product {
+
+}

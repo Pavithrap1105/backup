@@ -1,0 +1,18 @@
+server:
+  port: 9093
+  
+spring:
+  application:
+    name: HYSTRIX-DASHBOARD
+    
+   
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream  
+        
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka  

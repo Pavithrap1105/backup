@@ -1,0 +1,5 @@
+package com.luxoft.cloudgateway.cloudgateway.controller;
+
+public class FallBackController {
+
+}

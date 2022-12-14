@@ -1,0 +1,10 @@
+package com.luxoft.productservice.service;
+
+import com.luxoft.productservice.dto.ProductRequest;
+import com.luxoft.productservice.model.Product;
+
+public interface ProductService {
+	
+	public Product createProduct(ProductRequest product);
+
+}

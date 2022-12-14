@@ -1,0 +1,41 @@
+jwt:
+  secret: employee
+server:
+  port: 9091
+  forward-headers-strategy: framework
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/db_luxoft?useSSL=false
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+  main:
+    allow-circular-references: true
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+      
+  application:
+    name: EMPLOYEE-MANAGEMENT
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+        defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    
+#springdoc:
+#  swagger-ui:
+#    path: /swagger-ui.html
+
+
+  

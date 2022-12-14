@@ -1,0 +1,71 @@
+package com.books.stock.exchange.Controllers;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.books.stock.exchange.Entities.Comics;
+import com.books.stock.exchange.Entities.ComicsRequest;
+import com.books.stock.exchange.Services.ComicsService;
+
+@RestController
+public class ComicsController {
+
+	private static Logger logger = LogManager.getLogger(ComicsController.class);
+
+	@Autowired
+	private ComicsService comicsService;
+
+	@PostMapping("/saveComic")
+	public Comics saveComic(@Valid @RequestBody Comics comics) {
+		Comics savedComic = comicsService.saveComic(comics);
+		logger.debug("Comic saved successfully");
+		return savedComic;
+	}
+
+	@GetMapping("/getAllComics")
+	public List<Comics> findAllComics() {
+		List<Comics> listOfComics = comicsService.getAllComics();
+		logger.debug("Comic fetched successfully");
+		return listOfComics;
+	}
+
+	@PutMapping("/updateComic/{id}")
+	public Comics updateComic(@Valid @RequestBody Comics comics, @PathVariable(name = "id") int comicId) {
+		Comics updateComicById = comicsService.updateComicById(comics, comicId);
+		logger.debug("Comic Updated successfully");
+		return updateComicById;
+	}
+
+	@DeleteMapping("/deleteComick/{id}")
+	public String deleteComic(@Valid @PathVariable(name = "id") int comicId) {
+		String deleteComicById = comicsService.deleteComicById(comicId);
+		logger.debug("Comic Deleted successfully");
+		return deleteComicById;
+	}
+
+	@PostMapping("/addComic")
+	public Comics addComic(@Valid @RequestBody ComicsRequest request) {
+		Comics addComic = comicsService.addComic(request);
+		logger.debug("Comic added successfully");
+		return addComic;
+	}
+
+	@GetMapping("/getComicsByHero/{hero}")
+	public List<Comics> findComicsByHero(@Valid @PathVariable("hero") String comicHero) {
+		List<Comics> comicsByHero = comicsService.findComicsByHero(comicHero);
+		logger.debug("Comic fetched by hero successfully ");
+		return comicsByHero;
+	}
+}

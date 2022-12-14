@@ -1,0 +1,5 @@
+package com.luxoft.productservice.service;
+
+public interface ProductService {
+
+}

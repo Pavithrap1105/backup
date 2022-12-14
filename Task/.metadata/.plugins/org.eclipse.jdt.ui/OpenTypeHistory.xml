@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=learn-today/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.luxoft.learntoday.service{StudentService.java[StudentService" modifiers="513" timestamp="1665659104970"/>
+    <typeInfo handle="=learn-today/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.luxoft.learntoday.service{TrainerService.java[TrainerService" modifiers="513" timestamp="1665656013958"/>
+    <typeInfo handle="=learn-today/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.luxoft.learntoday.controller{StudentController.java[StudentController" modifiers="1" timestamp="1665658910018"/>
+    <typeInfo handle="=learn-today/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.luxoft.learntoday.controller{TrainerController.java[TrainerController" modifiers="1" timestamp="1665656646216"/>
+    <typeInfo handle="=learn-today/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.luxoft.learntoday.service{StudentServiceImpl.java[StudentServiceImpl" modifiers="1" timestamp="1665989649017"/>
+    <typeInfo handle="=learn-today/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.luxoft.learntoday.service{TrainerServiceImpl.java[TrainerServiceImpl" modifiers="1" timestamp="1665988555959"/>
+    <typeInfo handle="=Employee-management/C:\/Users\/PPrakash\/.m2\/repository\/com\/google\/code\/gson\/gson\/2.8.9\/gson-2.8.9.jar=/maven.pomderived=/true=/=/test=/true=/=/maven.groupId=/com.google.code.gson=/=/maven.artifactId=/gson=/=/maven.version=/2.8.9=/=/maven.scope=/runtime=/=/maven.pomderived=/true=/&lt;com.google.gson(JsonObject.class[JsonObject" modifiers="49" timestamp="1663592070238"/>
+    <typeInfo handle="=Employee-management/C:\/Users\/PPrakash\/.m2\/repository\/net\/minidev\/json-smart\/2.4.7\/json-smart-2.4.7.jar=/maven.pomderived=/true=/=/maven.groupId=/net.minidev=/=/maven.artifactId=/json-smart=/=/maven.version=/2.4.7=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;net.minidev.json(JSONObject.class[JSONObject" modifiers="33" timestamp="1662534945568"/>
+    <typeInfo handle="=learn-today/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.luxoft.learntoday.controller{UserController.java[UserController" modifiers="1" timestamp="1665728771645"/>
+</typeInfoHistroy>

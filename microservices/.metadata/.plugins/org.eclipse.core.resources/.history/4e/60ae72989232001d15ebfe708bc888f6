@@ -1,0 +1,28 @@
+package com.luxoft.orderservice.service;
+
+import java.util.UUID;
+
+import com.luxoft.orderservice.dto.OrderLineItemsDto;
+import com.luxoft.orderservice.dto.OrderRequest;
+import com.luxoft.orderservice.model.Order;
+import com.luxoft.orderservice.model.OrderLineItems;
+
+public class OrderServiceImpl implements OrderService {
+
+	@Override
+	public void placeOrder(OrderRequest orderRequest) {
+		Order order= new Order();
+		order.setOrderNumber(UUID.randomUUID().toString());  
+
+		orderRequest.getOrderLineItemsDtos().stream().map(orderLineItems-> mapToDto(orderLineItems));
+	}
+
+	private OrderLineItems mapToDto(OrderLineItemsDto orderLineItemsDto) {
+		OrderLineItems items = new OrderLineItems();
+		items.setSkuCode(orderLineItemsDto.getSkuCode());
+		items.setQuantity(orderLineItemsDto.getQuantity());
+		items.setPrice(orderLineItemsDto.getPrice());
+		return items;
+	}
+
+}
